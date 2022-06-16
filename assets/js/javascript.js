@@ -12,10 +12,10 @@ for(let div of divs){
 
 
 document.body.addEventListener("keyup",(event)=>{
-    play_sound(event.code.toLocaleLowerCase());
+    play_sound(event.code.toLowerCase());
 });
 
-document.querySelector("section button").addEventListener("mousein",()=>{
+document.querySelector("section button").addEventListener("click",()=>{
     let composição = document.querySelector("section input").value;
     
     if(composição !==""){
